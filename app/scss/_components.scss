@@ -1,0 +1,21 @@
+// _components.scss — everything that is reusable – buttons, navbars, cards, and so on
+
+.container {
+  max-width: 1200px;
+}
+
+.cta-btn {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid grey;
+  }
+}

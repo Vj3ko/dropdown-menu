@@ -12,11 +12,97 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="./dist/main.css" />
+
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more
+    <div class="overlay"></div>
+    <header class="container header">
+      <img class="header__logo" src="./images/logo.svg" alt="snap" />
+      <button class="header__cta--open cta-btn"></button>
+      <nav class="header__navbar">
+        <button class="header__cta--close cta-btn"></button>
+        <ul class="navbar__menu">
+          <div class="dropdown" data-dropdown>
+            <li class="navbar__item">
+              <a
+                href="#"
+                class="navbar__link submenu features"
+                data-dropdown-btn
+                >features</a
+              >
+              <ul class="submenu__container">
+                <li><a href="#" class="feature todo">todo list</a></li>
+                <li><a href="#" class="feature calendar">calendar</a></li>
+                <li><a href="#" class="feature reminders">reminders</a></li>
+                <li><a href="#" class="feature planning">planning</a></li>
+              </ul>
+            </li>
+          </div>
+          <div class="dropdown" data-dropdown>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link submenu company" data-dropdown-btn
+                >company</a
+              >
+              <ul class="submenu__container">
+                <li><a href="#">history</a></li>
+                <li><a href="#">our team</a></li>
+                <li><a href="#">blog</a></li>
+              </ul>
+            </li>
+          </div>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">careers</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">about</a>
+          </li>
+          <div class="btn-container">
+            <a href="#" class="btn-login btn">Login</a>
+            <a href="#" class="btn-register btn">Register</a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="hero">
+        <img src="/images/image-hero-mobile.png" alt="" />
+      </div>
+
+      <section class="main__wrapper">
+        <h1 class="title">make remote work</h1>
+
+        <p class="description">
+          get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+
+        <a href="#" class="l-btn">Learn more</a>
+
+        <div class="clients__container">
+          <div class="client">
+            <img src="/images/client-databiz.svg" alt="" />
+          </div>
+          <div class="client">
+            <img src="/images/client-audiophile.svg" alt="" />
+          </div>
+          <div class="client">
+            <img src="/images/client-meet.svg" alt="" />
+          </div>
+          <div class="client">
+            <img src="/images/client-maker.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app/js/script.js"></script>
   </body>
 </html>
+
+<!-- TODO napravit responsive za sve po dizajnu
+  popravit animacije i te sitnice
+   
+-->
